@@ -22,10 +22,21 @@
     
     <main class="container">
 		
-	<audio controls>
-    		<source src="background.mp3" type="audio/mp3">
-   		Your browser does not support the audio element.
-	</audio>
+	<img id="playButton" src="ali.jpeg" alt="Play Audio" style="cursor: pointer;">
+
+    <!-- Audio element -->
+    <audio id="audioClip">
+        <source src="background.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- JavaScript to handle the click event -->
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('audioClip');
+            audio.play();
+        });
+    </script>
 	
         <article>
             <h2>ALİ EREN AMLI, EVRENİN TEK ANLAMI!</h2>
